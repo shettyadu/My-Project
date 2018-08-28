@@ -1,0 +1,14 @@
+<h1>All Contacts</h1>
+<div class="p-3 mb-2 bg-secondary text-white">
+{{#each contact}}
+<h4>contacted person:{{this.name}}</h4>
+<h4>E-mail:{{this.email}}</h4>
+<h4>Message from:<p class="text-success">{{this.name}}</p></h4>
+<div class="p-3 mb-2 bg-primary text-white">
+<h4> {{this.message}}</h4>
+</div>
+
+<h3><a href="/users/update/{{this._id}}">Update</a></h3>  <h3><a href="/users/delete/{{this._id}}">Delete</a></h3>
+
+{{/each}}
+</div>
